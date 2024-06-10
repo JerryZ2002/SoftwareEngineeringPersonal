@@ -6,7 +6,7 @@ from factory import IconFactory, TreeStyleFactory, RectangleStyleFactory
 def main():
     icon_factory = (IconFactory("poker-face"), IconFactory("chess"), IconFactory("star"))
     style_factory = (TreeStyleFactory(), RectangleStyleFactory())
-    json_file = "src\example.json"
+    json_file = "example.json"
     for icon in icon_factory:
         for style in style_factory:
             print(f"Icon: {icon.icon_family}, Style: {style.__class__.__name__.replace('StyleFactory', '')}")
